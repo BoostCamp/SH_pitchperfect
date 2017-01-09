@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0170103" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="_0170103" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -42,6 +42,7 @@
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                                 <connections>
+                                    <action selector="stopRecording1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTX-hY-Kv1"/>
                                     <segue destination="pXD-ex-NqD" kind="show" id="j96-Zw-9C6"/>
                                 </connections>
                             </button>
@@ -60,6 +61,7 @@
                     <connections>
                         <outlet property="recordingButton" destination="8HL-XZ-Rqx" id="85x-g5-dp9"/>
                         <outlet property="recordingLabel" destination="bum-F6-gdd" id="XMM-fm-bEA"/>
+                        <outlet property="stopRecordingButton" destination="Z74-73-6od" id="xaq-jo-hg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
